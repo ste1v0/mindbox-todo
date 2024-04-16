@@ -14,7 +14,7 @@ function AddTask() {
 
     function addNewTask(value: string) {
         if (value) {
-            setTaskList(prevValue  => [...prevValue, { id: uuidv4(), key: prevValue.length + 1, name: value, status: 'active' }])
+            setTaskList(prevValue  => [...prevValue, { id: uuidv4(), name: value, status: 'active' }])
             setInputValue('')
         }
     }

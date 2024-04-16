@@ -16,14 +16,14 @@ function TaskList() {
             {taskList.length > 0 && 
             <ul className={styles.taskList}>
                 {filter === 'all' 
-                ? taskList.map((task) => {
+                ? taskList.map((task, index) => {
                     return (
-                        <Task key={task.id} id={task.id} name={task.name} status={task.status} />
+                        <Task key={index} id={task.id} name={task.name} status={task.status} />
                     )
                 })
-                : taskList.filter(task => task.status === filter).map(e => {
+                : taskList.filter(task => task.status === filter).map((e, index) => {
                     return (
-                        <Task key={e.id} id={e.id} name={e.name} status={e.status} />
+                        <Task key={index} id={e.id} name={e.name} status={e.status} />
                     )
                 })
             }
