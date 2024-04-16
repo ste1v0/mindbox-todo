@@ -4,6 +4,7 @@ import styles from './AddTask.module.css'
 import { useContext, useState } from 'react'
 import { TaskListContext, TaskListContextType } from '@/app/TaskListContext'
 import { useHotkeys } from '@mantine/hooks'
+import { v4 as uuidv4 } from 'uuid'
 
 function AddTask() {
 
@@ -13,7 +14,7 @@ function AddTask() {
 
     function addNewTask(value: string) {
         if (value) {
-            setTaskList(prevValue  => [...prevValue, { id: prevValue.length + 1, key: prevValue.length + 1, name: value, status: 'active'}])
+            setTaskList(prevValue  => [...prevValue, { id: uuidv4(), key: prevValue.length + 1, name: value, status: 'active' }])
             setInputValue('')
         }
     }

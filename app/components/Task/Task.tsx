@@ -3,13 +3,7 @@
 import styles from './Task.module.css'
 import { useContext } from 'react'
 import { TaskListContext, TaskListContextType } from '@/app/TaskListContext'
-
-type TaskProps = {
-    key: number,
-    id: number,
-    name: string
-    status: string
-}
+import { TaskProps } from '@/app/page'
 
 function Task({ key, id, name, status } : TaskProps) {
 

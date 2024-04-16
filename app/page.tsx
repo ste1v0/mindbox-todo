@@ -9,7 +9,7 @@ import { useState } from 'react'
 
 
 export type TaskProps = {
-  id: number,
+  id: string,
   key: number,  
   name: string,
   status: string

@@ -21,8 +21,6 @@
     outline: none;
 }
 
-
-
 .focusedInput::placeholder {
     color: #E6E6E6;
     font-weight: 100;
