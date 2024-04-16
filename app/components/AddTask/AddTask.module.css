@@ -1,0 +1,43 @@
+.addTask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 1.7rem;
+    flex-wrap: wrap;
+}
+
+.focusedInput {
+    min-width: 15vw;
+    min-height: 5vh;
+    border: none;
+    font-weight: 100;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+.focusedInput:focus{
+    outline: none;
+}
+
+
+
+.focusedInput::placeholder {
+    color: #E6E6E6;
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.btn {
+    padding: 1vh 1.5vw;
+    border: none;
+    border-radius: 7px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #E9DAD9;
+}
